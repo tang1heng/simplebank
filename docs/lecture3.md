@@ -8,6 +8,12 @@ https://github.com/golang-migrate/migrate
 brew install golang-migrate
 ```
 
+生成迁移脚本：
+
+```bash
+migrate create -ext sql -dir db/migration -seq init_schema
+```
+
 升级：
 
 ```bash
